@@ -1,0 +1,22 @@
+{
+  "name": "actions-hugo",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/klakegg/actions-hugo.git"
+  },
+  "author": "Erlend Klakegg Bergheim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/klakegg/actions-hugo/issues"
+  },
+  "homepage": "https://github.com/klakegg/actions-hugo#readme",
+  "dependencies": {
+    "@actions/core": "^1.0.0"
+  }
+}

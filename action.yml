@@ -1,0 +1,33 @@
+name: 'Powerful Hugo'
+description: 'Powerful Hugo action for simple and advanced use cases.'
+
+branding:
+  icon: package
+  color: green
+
+inputs:
+  version:
+    description: 'Hugo version'
+    default: ''
+  image:
+    description: 'Image type'
+    default: 'busybox'
+  source:
+    description: 'Source directory'
+    default: ''
+  target:
+    description: 'Target directory'
+    default: 'public'
+  command:
+    description: 'Build command'
+    default: ''
+  pandoc_command:
+    description: 'Pandoc command'
+    default: 'pandoc-default'
+  env:
+    description: 'Environment (DEV/production)'
+    default: 'DEV'
+
+runs:
+  using: 'node12'
+  main: 'main.js'
