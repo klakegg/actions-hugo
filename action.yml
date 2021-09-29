@@ -18,6 +18,9 @@ inputs:
   target:
     description: 'Target directory'
     default: 'public'
+  cache:
+    description: 'Cache directory'
+    default: 'cache'
   command:
     description: 'Build command'
     default: ''

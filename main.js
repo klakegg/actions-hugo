@@ -33,6 +33,7 @@ docker(['pull', `klakegg/hugo:${label}`]);
 docker(['run', '--rm' , '-i',
   '-v', `${process.env.GITHUB_WORKSPACE}/${core.getInput('source')}:/src`,
   '-v', `${process.env.GITHUB_WORKSPACE}/${core.getInput('target')}:/target`,
+  '-v', `${process.env.GITHUB_WORKSPACE}/${core.getInput('cache')}:/tmp/hugo_cache`,
   '-e', `HUGO_ENV=${core.getInput('env')}`,
   '-e', `HUGO_PANDOC=${core.getInput('pandoc_command')}`,
   `klakegg/hugo:${label}`]
