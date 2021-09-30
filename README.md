@@ -76,6 +76,8 @@ jobs:
 
 **target** - Sets the target directory to be used. Defaults to `public`.
 
+**cache** - Sets the cache directory to be used. Defaults to `cache`.
+
 **command** - Sets the command to be used. Defaults to *blank*. When set is normal Hugo commands used, however `hugo` is skipped.
 
 **pandoc_command** - Sets the Pandoc command used. Defaults to `pandoc-default`. See use of [Pandoc with Hugo](https://github.com/klakegg/docker-hugo#using-pandoc) for more information.
